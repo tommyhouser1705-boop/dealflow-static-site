@@ -1,5 +1,5 @@
 /*
-  Global stylesheet for the multi‑page Dealflow Travel site.
+  Global stylesheet for the multi‑page Flip Flop Travel Co site.
 
   This CSS defines a modern, professional aesthetic using a variable‑based
   colour palette and simple grid layouts. The design is responsive and
@@ -120,6 +120,20 @@ section {
 
 .btn:hover {
   background: #f1f1f1;
+}
+
+/*
+ * Logo image sizing
+ *
+ * The flip‑flop icon displayed next to the company name in the header should
+ * scale appropriately and align vertically with the text. The margin
+ * provides a small gap between the icon and the wordmark.
+ */
+.logo-img {
+  width: 32px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 0.5rem;
 }
 
 /* Responsive grid helpers */
