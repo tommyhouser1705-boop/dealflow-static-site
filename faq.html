@@ -9,6 +9,8 @@
   <body>
     <header>
       <h1><a href="index.html">Dealflow Travel</a></h1>
+      <!-- Mobile menu toggle button -->
+      <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
       <nav>
         <ul>
           <li><a href="services.html">Services</a></li>
@@ -96,8 +98,33 @@
           Otherwise, planning fees are non‑refundable once research
           begins.
         </p>
+
+        <!-- Responsibilities FAQ to clarify what the planner does for each package -->
+        <h3>What do you handle for each package?</h3>
+        <p>
+          Our service tiers correspond to different levels of involvement. For Budget
+          Explorer and Lite plans we focus on research and inspiration: we
+          analyse prices and destinations for you, compile two to three
+          itineraries and send you booking links so you can finalise the trip
+          yourself. Concierge clients receive hands‑on planning: we search,
+          negotiate and book flights, lodging and cars using your payment
+          information and deliver a complete travel packet. Group and Premium
+          projects include all of the above plus coordination among
+          travellers, payment splitting, activity reservations and real‑time
+          support during your trip.
+        </p>
       </div>
     </section>
+    <!-- Mobile navigation toggle script -->
+    <script>
+      const toggleBtn = document.querySelector('.menu-toggle');
+      const navList = document.querySelector('nav ul');
+      if (toggleBtn && navList) {
+        toggleBtn.addEventListener('click', () => {
+          navList.classList.toggle('open');
+        });
+      }
+    </script>
 
     <section style="text-align: center;">
       <h2>Still Have Questions?</h2>

@@ -10,6 +10,8 @@
     <!-- Header with persistent navigation -->
     <header>
       <h1><a href="index.html">Dealflow Travel</a></h1>
+      <!-- Mobile menu toggle button -->
+      <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
       <nav>
         <ul>
           <li><a href="services.html">Services</a></li>
@@ -34,6 +36,31 @@
         who loves a good deal.
       </p>
       <a href="quote.html" class="btn">Start Your Quote</a>
+    </section>
+
+    <!-- Spring Break special section highlighting seasonal deals -->
+    <section id="spring-break">
+      <h2 style="text-align: center;">Spring Break Special</h2>
+      <p style="max-width: 700px; margin: 0.5rem auto 1.5rem auto; text-align: center;">
+        Book your dream spring break getaway with exclusive discounts and perks. Limited availability!
+      </p>
+      <div class="grid grid-3" style="margin-top: 2rem;">
+        <div class="card">
+          <h3>Hawaii Escape</h3>
+          <p>10‑night beachfront condo and flights starting at <strong>$1,800</strong> per person.</p>
+        </div>
+        <div class="card">
+          <h3>Cancún &amp; Caribbean</h3>
+          <p>All‑inclusive packages with airfare and resort from <strong>$1,200</strong>.</p>
+        </div>
+        <div class="card">
+          <h3>European City Break</h3>
+          <p>Experience springtime in Prague, Paris or Barcelona from <strong>$900</strong>.</p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="quote.html" class="btn">Get Spring Break Quote</a>
+      </div>
     </section>
 
     <!-- Overview of services to encourage exploration of other pages -->
@@ -99,6 +126,18 @@
       <p>Let us build your perfect trip and uncover the savings.</p>
       <a href="quote.html" class="btn">Get Your Quote</a>
     </section>
+
+    <!-- Mobile navigation toggle script -->
+    <script>
+      const toggleBtn = document.querySelector('.menu-toggle');
+      const navList = document.querySelector('nav ul');
+      // Ensure elements exist before adding event listener
+      if (toggleBtn && navList) {
+        toggleBtn.addEventListener('click', () => {
+          navList.classList.toggle('open');
+        });
+      }
+    </script>
 
     <footer>
       <p>&copy; 2025 Dealflow Travel. All rights reserved.</p>

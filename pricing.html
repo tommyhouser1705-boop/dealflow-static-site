@@ -9,6 +9,8 @@
   <body>
     <header>
       <h1><a href="index.html">Dealflow Travel</a></h1>
+      <!-- Mobile menu toggle button -->
+      <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
       <nav>
         <ul>
           <li><a href="services.html">Services</a></li>
@@ -77,6 +79,16 @@
         </div>
       </div>
     </section>
+    <!-- Mobile navigation toggle script -->
+    <script>
+      const toggleBtn = document.querySelector('.menu-toggle');
+      const navList = document.querySelector('nav ul');
+      if (toggleBtn && navList) {
+        toggleBtn.addEventListener('click', () => {
+          navList.classList.toggle('open');
+        });
+      }
+    </script>
 
     <section style="text-align: center;">
       <h2>Not Sure Where to Start?</h2>
