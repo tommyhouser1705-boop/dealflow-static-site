@@ -62,8 +62,36 @@
   <label for="budget">Total Budget (USD)</label>
   <input type="number" id="budget" name="budget" required>
 
-  <label for="dates">Travel Dates</label>
-  <input type="text" id="dates" name="dates" required>
+<label for="start-date">Start date</label>
+<input
+  type="date"
+  id="start-date"
+  name="Start_Date"
+  required
+/>
+
+<label for="end-date">End date</label>
+<input
+  type="date"
+  id="end-date"
+  name="End_Date"
+  required
+/>
+
+<label for="flex-days">How flexible are your dates?</label>
+<input
+  type="number"
+  id="flex-days"
+  name="Flexibility_Days"
+  min="0"
+  placeholder="e.g. 2"
+ />
+
+<p class="field-help">
+  Tip: Flexibility is the #1 way to unlock the best prices. If you can shift your trip
+  by a few days earlier or later, I can usually save you a lot more.
+</p>
+
 
   <label for="destinations">Destination Preferences (optional)</label>
   <input type="text" id="destinations" name="preferences">
