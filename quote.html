@@ -41,49 +41,37 @@
           details in one click.
         -->
         <form action="https://formsubmit.co/el/mayada" method="POST">
-          <!-- Hidden fields customise your form submission: replace your-email@example.com with your own email
-            and adjust the subject text. _captcha=false disables the default captcha prompt. -->
-          <input type="hidden" name="_subject" value="New Quote Request from Flip Flop Travel Co" />
-          <input type="hidden" name="_captcha" value="false" />
-          <label for="name">Name</label>
-          <input type="text" id="name" name="Name" required />
+  <!-- Hidden configuration fields -->
+  <input type="hidden" name="_subject" value="Flip Flop Travel – New Quote Request">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="https://flipfloptravel.vercel.app/thankyou.html">
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="Email" required />
+  <!-- Visible form fields -->
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required placeholder="Jane Doe">
 
-          <label for="origin">Home Airport / Origin</label>
-          <input type="text" id="origin" name="Origin" placeholder="e.g. ATL, Knoxville" required />
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required placeholder="you@example.com">
 
-          <label for="budget">Total Budget (USD)</label>
-          <input type="number" id="budget" name="Budget" placeholder="e.g. 1500" required />
+  <label for="destination">Origin or Destination</label>
+  <input type="text" id="destination" name="destination" placeholder="Knoxville or Maui">
 
-          <label for="dates">Travel Dates</label>
-          <input
-            type="text"
-            id="dates"
-            name="Dates"
-            placeholder="e.g. March 10–17, 2026"
-            required
-          />
+  <label for="dates">Dates</label>
+  <input type="text" id="dates" name="dates" placeholder="March 7–15">
 
-          <label for="destinations">Destination Preferences (optional)</label>
-          <input
-            type="text"
-            id="destinations"
-            name="Preferences"
-            placeholder="e.g. beach, Europe, city break"
-          />
+  <label for="budget">Budget (total)</label>
+  <input type="text" id="budget" name="budget" placeholder="$1,800">
 
-          <label for="notes">Additional Notes (optional)</label>
-          <textarea
-            id="notes"
-            name="Notes"
-            rows="4"
-            placeholder="Tell us anything else we should know about your trip."
-          ></textarea>
+  <label for="travelers">Travelers</label>
+  <input type="text" id="travelers" name="travelers" placeholder="2 adults">
 
-          <button type="submit">Submit Request</button>
-        </form>
+  <label for="notes">Notes</label>
+  <textarea id="notes" name="notes" placeholder="Preferences, under-25 driver, etc."></textarea>
+
+  <button type="submit">Send Request</button>
+</form>
+
       </div>
     </section>
 
