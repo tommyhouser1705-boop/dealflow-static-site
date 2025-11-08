@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You – Flip Flop Travel Co</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      text-align: center;
+      padding: 80px 16px;
+      background: linear-gradient(#ffffff, #f8fafc);
+      color: #0f172a;
+    }
+    h1 { font-size: 2rem; margin-bottom: 16px; }
+    p { color: #475569; margin-bottom: 24px; }
+    a {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #0f172a;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Thanks for reaching out! 🌴</h1>
+  <p>I’ve received your request and will be in touch soon with curated travel options and deals.</p>
+  <a href="/">Back to Home</a>
+</body>
+</html>
