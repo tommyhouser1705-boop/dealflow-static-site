@@ -56,6 +56,9 @@
   <!-- _replyto tells FormSubmit where replies should go -->
   <input type="email" id="email" name="_replyto" required>
 
+  <label for="Phone Number">Phone Number</label>
+  <input type="text" id="Phone Number" name="Phone Number" required>
+  
   <label for="origin">Home Airport / Origin</label>
   <input type="text" id="origin" name="origin" required>
 
@@ -84,7 +87,7 @@
   id="flex-days"
   name="Flexibility_Days"
   min="0"
-  placeholder="e.g. 2"
+  placeholder="e.g. 2 Days Earlier/ 1 Day Later"
  />
 
 <p class="field-help">
@@ -94,7 +97,8 @@
 
 
   <label for="destinations">Destination Preferences (optional)</label>
-  <input type="text" id="destinations" name="preferences">
+  <input type="text" id="destinations" name="preferences" placeholder="e.g. Beach, All-Inclusive, Within the U.S, Or anything else you want me to know!">
+  
 
   <label for="notes">Additional Notes (optional)</label>
   <textarea id="notes" name="notes" rows="4"></textarea>
