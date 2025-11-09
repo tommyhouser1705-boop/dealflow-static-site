@@ -118,7 +118,15 @@
   </div>
 </section>
 
-
+  <!-- Mobile navigation toggle script -->
+  <script>
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('nav ul');
+    if (toggleBtn && navList) {
+      toggleBtn.addEventListener('click', () => {
+        navList.classList.toggle('open');
+      });
+    }
 
     <footer>
       <p>&copy; 2025 Flip Flop Travel Co. All rights reserved.</p>
