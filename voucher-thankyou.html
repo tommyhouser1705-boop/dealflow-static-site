@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You for Your Purchase | Flip Flop Travel Co</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>
+      <a href="index.html">
+        <img src="images/flip-flop-icon.png" alt="Flip Flop Travel Co logo" class="logo-img">
+        Flip Flop Travel Co
+      </a>
+    </h1>
+    <!-- Mobile menu toggle button -->
+    <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="wins.html">Wins</a></li>
+        <li><a href="young.html">Young Advantage</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="quote.html">Get a Quote</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="gift.html">Gift a Trip</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section" style="text-align:center; padding: 2.5rem 1rem 1.5rem;">
+      <h2>Thank You for Gifting a Trip 🌴</h2>
+      <p style="max-width: 720px; margin: 0.75rem auto 0;">
+        Your payment was received successfully. A Flip Flop Travel Co gift voucher is on the way.
+      </p>
+      <p style="max-width: 720px; margin: 0.75rem auto 0; font-size:0.95rem; color:#64748b;">
+        Within 24 hours, you’ll get an email with a personalized digital voucher, including a unique voucher code, 
+        that you can forward or print and put in a card. If you don’t see it, please check your spam or promotions folder.
+      </p>
+    </section>
+
+    <section style="padding: 0 1rem 2.5rem; max-width: 900px; margin: 0 auto;">
+      <h3 style="text-align:center;">What Happens Next</h3>
+      <ol class="numbered-list">
+        <li>
+          <strong>Voucher arrives in your inbox.</strong>  
+          You’ll receive a digital voucher with the traveler’s package (Deal Finder or Concierge) and a unique voucher code.
+        </li>
+        <li>
+          <strong>You give the gift.</strong>  
+          Forward the voucher by email or print it and include it with a card or gift box.
+        </li>
+        <li>
+          <strong>They redeem when they’re ready.</strong>  
+          The recipient visits the site, fills out the trip request form, and enters the voucher code to redeem their planning session.
+        </li>
+      </ol>
+      <p style="margin-top: 0.75rem; font-size:0.95rem; color:#64748b;">
+        Vouchers are valid for 12 months from purchase and cover planning / research / booking fees,
+        not the cost of flights or stays. Flexibility on dates and destinations usually leads to the best deals.
+      </p>
+
+      <div style="text-align:center; margin-top:1.5rem;">
+        <a href="gift.html" class="button-primary" style="display:inline-block; padding:10px 16px; border-radius:12px; background:#0f172a; color:#fff; text-decoration:none; margin-right:0.5rem;">
+          Back to Gift a Trip
+        </a>
+        <a href="quote.html" class="button-secondary" style="display:inline-block; padding:10px 16px; border-radius:12px; background:#fff; border:1px solid #0f172a; color:#0f172a; text-decoration:none;">
+          See How Redemption Works
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Mobile navigation toggle script -->
+  <script>
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('nav ul');
+    if (toggleBtn && navList) {
+      toggleBtn.addEventListener('click', () => {
+        navList.classList.toggle('open');
+      });
+    }
+  </script>
+
+  <footer>
+    <p>&copy; 2025 Flip Flop Travel Co. All rights reserved.</p>
+  </footer>
+</body>
+</html>
