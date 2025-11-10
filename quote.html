@@ -55,8 +55,9 @@
 
   <label for="email">Email</label>
   <!-- _replyto tells FormSubmit where replies should go -->
-  <input type="email" id="email" name="_replyto" required>
-
+  <input type="email" id="email" name="_replyto" value="email" required>
+ <input type="hidden" name="_replyto" value="">
+  
   <label for="Phone Number">Phone Number</label>
   <input type="text" id="Phone Number" name="Phone Number" required>
   
@@ -119,7 +120,7 @@
   <textarea id="Voucher" name="Voucher" rows="1"></textarea>
 
   <button type="submit">Submit Request</button>
-  <input type="hidden" name="_replyto" value="">
+
 </form>
 
 
