@@ -1,7 +1,7 @@
 (function () {
   const testimonials = [
     "“Saved us hundreds and handled all the group payments — so easy.”",
-    "“Didn’t have to front the bill once. 10/10 experience.”",
+    "“Incredibly easy to work with and made the whole process stress free.”- Grace A.",
     "“Booked our Mexico trip way under budget. Highly recommend.”",
     "“Made group travel painless — everything was taken care of.”"
   ];
