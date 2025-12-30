@@ -6,7 +6,7 @@
     "“Made group travel painless — everything was taken care of.”"
   ];
 
-  const ROTATE_MS = 15000; // 15 seconds
+  const ROTATE_MS = 10000; // 10 seconds
   const FADE_MS = 500;
 
   function mount() {
