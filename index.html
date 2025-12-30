@@ -147,5 +147,59 @@
     <footer>
       <p>&copy; 2025 Flip Flop Travel Co. All rights reserved.</p>
     </footer>
+<!-- POPUP -->
+<div id="ff-overlay" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,.6); z-index:9999;"></div>
+
+<div id="ff-popup" style="display:none; position:fixed; left:50%; top:50%; transform:translate(-50%,-50%);
+  width:min(92vw,420px); background:#fff; border-radius:18px; padding:22px; z-index:10000; box-shadow:0 10px 30px rgba(0,0,0,.25); font-family:system-ui;">
+  
+  <button id="ff-close" aria-label="Close" style="position:absolute; right:14px; top:12px; border:none; background:transparent; font-size:20px; cursor:pointer;">✕</button>
+
+  <h2 style="margin:0 0 8px; font-size:20px;">Want insane trip deals?</h2>
+  <p style="margin:0 0 14px; line-height:1.4; color:#333;">
+    Get my best all-inclusive + flight finds, plus help organizing group payments.
+  </p>
+
+  <a href="/start" style="display:inline-block; width:100%; text-align:center; padding:12px 14px; border-radius:12px;
+     background:#111; color:#fff; text-decoration:none; font-weight:600;">
+    Start Planning →
+  </a>
+
+  <p style="margin:10px 0 0; font-size:12px; color:#666; text-align:center;">
+    Limited launch spots each week.
+  </p>
+</div>
+
+<script>
+  (function () {
+    const KEY = "ff_popup_last_seen";
+    const DAYS = 7;
+
+    function shouldShow() {
+      const last = localStorage.getItem(KEY);
+      if (!last) return true;
+      const diff = Date.now() - parseInt(last, 10);
+      return diff > DAYS * 24 * 60 * 60 * 1000;
+    }
+
+    function show() {
+      document.getElementById("ff-overlay").style.display = "block";
+      document.getElementById("ff-popup").style.display = "block";
+      localStorage.setItem(KEY, String(Date.now()));
+    }
+
+    function hide() {
+      document.getElementById("ff-overlay").style.display = "none";
+      document.getElementById("ff-popup").style.display = "none";
+    }
+
+    window.addEventListener("load", () => {
+      if (shouldShow()) show();
+    });
+
+    document.getElementById("ff-close").addEventListener("click", hide);
+    document.getElementById("ff-overlay").addEventListener("click", hide);
+  })();
+</script>
   </body>
 </html>
